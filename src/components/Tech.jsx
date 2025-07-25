@@ -35,6 +35,7 @@ const Tech = () => {
 
   return (
     <section>
+      <h2 className="text-6xl font-bold mb-4 text-center">Skills</h2>
       <div className="tech-icons-wrapper flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
@@ -43,6 +44,7 @@ const Tech = () => {
               alt={technology.name}
               className="tech-icon w-full h-full object-contain"
             />
+            <p>{technology.name}</p>
           </div>
         ))}
       </div>
